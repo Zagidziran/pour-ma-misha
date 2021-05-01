@@ -1,0 +1,10 @@
+c:\Git\PourMaMisha\DataAceess\bin\Release\netcoreapp3.1\data.db
+c:\Git\PourMaMisha\DataAceess\bin\Release\netcoreapp3.1\DataAceess.deps.json
+c:\Git\PourMaMisha\DataAceess\bin\Release\netcoreapp3.1\DataAceess.dll
+c:\Git\PourMaMisha\DataAceess\bin\Release\netcoreapp3.1\DataAceess.pdb
+c:\Git\PourMaMisha\DataAceess\obj\Release\netcoreapp3.1\DataAceess.csprojAssemblyReference.cache
+c:\Git\PourMaMisha\DataAceess\obj\Release\netcoreapp3.1\DataAceess.AssemblyInfoInputs.cache
+c:\Git\PourMaMisha\DataAceess\obj\Release\netcoreapp3.1\DataAceess.AssemblyInfo.cs
+c:\Git\PourMaMisha\DataAceess\obj\Release\netcoreapp3.1\DataAceess.csproj.CoreCompileInputs.cache
+c:\Git\PourMaMisha\DataAceess\obj\Release\netcoreapp3.1\DataAceess.dll
+c:\Git\PourMaMisha\DataAceess\obj\Release\netcoreapp3.1\DataAceess.pdb

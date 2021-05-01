@@ -1,0 +1,110 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ContinentsView - Copy.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.113.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataAceess\DataAceess.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="ContinentsView - Copy %282%29.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="ContinentsView - Copy %283%29.Designer.cs">
+      <DependentUpon>ContinentsView.Designer.cs</DependentUpon>
+    </Compile>
+    <Compile Update="EventsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="PlantSummaryView.cs" />
+    <Compile Update="AboutView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="PlantsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="CountriesView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="ContinentsView - Copy %282%29 - Copy %282%29.resx">
+      <DependentUpon>ContinentsView - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ContinentsView - Copy %282%29 - Copy - Copy.resx">
+      <DependentUpon>ContinentsView - Copy (2) - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ContinentsView - Copy %282%29 - Copy.resx">
+      <DependentUpon>ContinentsView - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ContinentsView - Copy %282%29.resx">
+      <DependentUpon>ContinentsView.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ContinentsView - Copy %283%29 - Copy.resx">
+      <DependentUpon>ContinentsView - Copy (3).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ContinentsView - Copy %283%29.resx">
+      <DependentUpon>ContinentsView.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ContinentsView - Copy %284%29.resx">
+      <DependentUpon>ContinentsView.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ContinentsView - Copy - Copy %282%29 - Copy.resx">
+      <DependentUpon>ContinentsView - Copy - Copy (2).resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ContinentsView - Copy - Copy %282%29.resx">
+      <DependentUpon>ContinentsView - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ContinentsView - Copy - Copy %283%29.resx">
+      <DependentUpon>ContinentsView - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ContinentsView - Copy - Copy - Copy %282%29.resx">
+      <DependentUpon>ContinentsView - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ContinentsView - Copy - Copy - Copy - Copy.resx">
+      <DependentUpon>ContinentsView - Copy - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ContinentsView - Copy - Copy - Copy.resx">
+      <DependentUpon>ContinentsView - Copy - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ContinentsView - Copy - Copy.resx">
+      <DependentUpon>ContinentsView - Copy.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ContinentsView - Copy.resx">
+      <DependentUpon>ContinentsView.resx</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

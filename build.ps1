@@ -1,0 +1,1 @@
+dotnet publish -o .\output -f netcoreapp3.1 -c Release -r win-x64
