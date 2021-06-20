@@ -1,7 +1,7 @@
 ﻿
 namespace MaMishaVisage
 {
-    partial class PlantSummaryView
+    partial class PlantSummaryByCountryView
     {
         /// <summary> 
         /// Required designer variable.
@@ -80,7 +80,7 @@ namespace MaMishaVisage
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(437, 9);
+            this.label2.Location = new System.Drawing.Point(431, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(109, 15);
             this.label2.TabIndex = 9;
@@ -90,7 +90,7 @@ namespace MaMishaVisage
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.DarkGreen;
-            this.panel2.Location = new System.Drawing.Point(411, 7);
+            this.panel2.Location = new System.Drawing.Point(405, 7);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(20, 20);
             this.panel2.TabIndex = 8;
@@ -99,17 +99,17 @@ namespace MaMishaVisage
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(590, 9);
+            this.label3.Location = new System.Drawing.Point(584, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 15);
+            this.label3.Size = new System.Drawing.Size(71, 15);
             this.label3.TabIndex = 11;
-            this.label3.Text = "Shutdown";
+            this.label3.Text = "Decomissed";
             // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.DarkRed;
-            this.panel3.Location = new System.Drawing.Point(564, 7);
+            this.panel3.Location = new System.Drawing.Point(558, 7);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(20, 20);
             this.panel3.TabIndex = 10;
@@ -118,7 +118,7 @@ namespace MaMishaVisage
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(329, 9);
+            this.label4.Location = new System.Drawing.Point(323, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 15);
             this.label4.TabIndex = 13;
@@ -128,12 +128,12 @@ namespace MaMishaVisage
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.DarkBlue;
-            this.panel4.Location = new System.Drawing.Point(303, 7);
+            this.panel4.Location = new System.Drawing.Point(297, 7);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(20, 20);
             this.panel4.TabIndex = 12;
             // 
-            // PlantSummaryView
+            // PlantSummaryByCountryView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -146,7 +146,7 @@ namespace MaMishaVisage
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.grdData);
-            this.Name = "PlantSummaryView";
+            this.Name = "PlantSummaryByCountryView";
             this.Size = new System.Drawing.Size(731, 506);
             ((System.ComponentModel.ISupportInitialize)(this.grdData)).EndInit();
             this.ResumeLayout(false);

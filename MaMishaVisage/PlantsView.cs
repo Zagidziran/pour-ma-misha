@@ -30,7 +30,7 @@ namespace MaMishaVisage
             var statuses = new[] {
                 new { Name = "In operation", Value = (long)PlantStatus.InOperation },
                 new { Name = "Under constraction", Value = (long)PlantStatus.UnderConstruction },
-                new { Name = "Stopped", Value = (long)PlantStatus.Stopped },
+                new { Name = "Decomissed", Value = (long)PlantStatus.Decomissed },
             };
 
             grdData.Columns.Clear();

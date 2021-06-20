@@ -43,6 +43,8 @@ namespace MaMishaVisage
             this.eventsView = new MaMishaVisage.EventsView();
             this.plantSummaryView = new MaMishaVisage.PlantSummaryView();
             this.about = new MaMishaVisage.AboutView();
+            this.plantSummaryByCountryView = new MaMishaVisage.PlantSummaryByCountryView();
+            this.mnByCountry = new System.Windows.Forms.ToolStripMenuItem();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,6 +52,7 @@ namespace MaMishaVisage
             // 
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnPlantSummary,
+            this.mnByCountry,
             this.mnContinents,
             this.mnCountries,
             this.mnPowerPlants,
@@ -164,11 +167,26 @@ namespace MaMishaVisage
             this.about.Size = new System.Drawing.Size(776, 411);
             this.about.TabIndex = 8;
             // 
+            // plantSummaryByCountryView
+            // 
+            this.plantSummaryByCountryView.Location = new System.Drawing.Point(12, 27);
+            this.plantSummaryByCountryView.Name = "plantSummaryByCountryView";
+            this.plantSummaryByCountryView.Size = new System.Drawing.Size(776, 411);
+            this.plantSummaryByCountryView.TabIndex = 9;
+            // 
+            // mnByCountry
+            // 
+            this.mnByCountry.Name = "mnByCountry";
+            this.mnByCountry.Size = new System.Drawing.Size(113, 20);
+            this.mnByCountry.Tag = "plantSummaryByCountryView";
+            this.mnByCountry.Text = "Plants By Country";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.plantSummaryByCountryView);
             this.Controls.Add(this.about);
             this.Controls.Add(this.plantSummaryView);
             this.Controls.Add(this.eventsView);
@@ -201,6 +219,8 @@ namespace MaMishaVisage
         private PlantSummaryView plantSummaryView;
         private System.Windows.Forms.ToolStripMenuItem nmAbout;
         private AboutView about;
+        private System.Windows.Forms.ToolStripMenuItem mnByCountry;
+        private PlantSummaryByCountryView plantSummaryByCountryView;
     }
 }
 

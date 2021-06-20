@@ -32,6 +32,9 @@
     <Compile Update="EventsView.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="PlantSummaryByCountryView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="PlantSummaryView.cs" />
     <Compile Update="AboutView.cs">
       <SubType>UserControl</SubType>

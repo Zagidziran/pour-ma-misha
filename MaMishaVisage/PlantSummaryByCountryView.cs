@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace MaMishaVisage
 {
-    public partial class PlantSummaryView : UserControl, IDataView
+    public partial class PlantSummaryByCountryView : UserControl, IDataView
     {
         private readonly BindingSource bindingSource = new BindingSource();
 
@@ -17,7 +17,7 @@ namespace MaMishaVisage
 
         private DatabaseConfiguration databaseConfiguration;
 
-        public PlantSummaryView()
+        public PlantSummaryByCountryView()
         {
             InitializeComponent();
         }
@@ -35,7 +35,7 @@ namespace MaMishaVisage
 
             grdData.Columns.Clear();
             grdData.Columns.AddRange(new DataGridViewColumn[] {
-                ColumnsFactory.CreateTextBoxColumn("Continent", "continent"),
+                ColumnsFactory.CreateTextBoxColumn("Country", "country"),
                 ColumnsFactory.CreateTextBoxColumn("Operation", "operating"),
                 ColumnsFactory.CreateTextBoxColumn("Under Construction", "underConstruction"),
                 ColumnsFactory.CreateTextBoxColumn("Decomissed", "stopped"),
@@ -50,11 +50,10 @@ namespace MaMishaVisage
         private void LoadData()
         {
             this.dataAdapter = new SQLiteDataAdapter(
-                @"SELECT continents.name continent, SUM(stats.operating) operating, SUM(stats.underConstruction) underConstruction, SUM(stats.stopped) stopped, SUM(stats.operating) + SUM(stats.underConstruction) + SUM(stats.stopped) total FROM continents 				
-                    JOIN countries ON countries.continentId = continents.id 
+                @"SELECT countries.name country, SUM(stats.operating) operating, SUM(stats.underConstruction) underConstruction, SUM(stats.stopped) stopped, SUM(stats.operating) + SUM(stats.underConstruction) + SUM(stats.stopped) total FROM countries 				
                     JOIN (SELECT countryId, CASE status WHEN 0 THEN 1 ELSE 0 END operating, CASE status WHEN 2 THEN 1 ELSE 0 END stopped, CASE status WHEN 1 THEN 1 ELSE 0 END underConstruction FROM powerPlants) stats ON stats.countryId = countries.id
-                    GROUP BY continents.id
-                    ORDER BY continents.name", this.databaseConfiguration.ConnectionString);
+                    GROUP BY countries.id 
+                    ORDER BY countries.name", this.databaseConfiguration.ConnectionString);
             this.dataTable = new DataTable("powerPlants");
             this.dataAdapter.Fill(this.dataTable);
             this.bindingSource.DataSource = this.dataTable;

@@ -8,6 +8,6 @@ namespace DataAceess.Entities
     {
         InOperation = 0,
         UnderConstruction = 1, 
-        Stopped = 2
+        Decomissed = 2
     }
 }
